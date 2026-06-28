@@ -113,7 +113,7 @@ default_transform: keymap_transform_0 {
 		label = "ENCODER";
 		a-gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		resolution = <4>;
+		resolution = <0.5>;
 		status = "okay";
 	};
 
@@ -133,11 +133,11 @@ default_transform: keymap_transform_0 {
 		reg = <0x3c>;
 		label = "DISPLAY";
 		width = <128>;
-		height = <64>;
+		height = <32>;
 		segment-offset = <0>;
 		page-offset = <0>;
 		display-offset = <0>;
-		multiplex-ratio = <63>;
+		multiplex-ratio = <31>;
 		prechargep = <0x22>;
 		inversion-on;
 	};
